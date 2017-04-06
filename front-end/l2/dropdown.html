@@ -1,0 +1,65 @@
+<!DOCtype htm>
+<html>
+<head>
+    <style>
+        .mainbar ul {
+            text-align: center;
+            background-color: darkgrey;
+            color:lightskyblue;
+            font-size: 25px;           
+        }
+        
+        .mainbar ul li{
+            list-style:none;
+            display:inline-block;
+            padding: 5px 25px;
+            position:relative;
+        }
+        
+        .mainbar ul li:hover{
+            background-color:floralwhite;
+        }
+        
+        ul.dropdown{
+            position:absolute;
+            width: 140px;
+            padding-left: 0px;
+            margin-left: -25px;
+            text-align:center;
+            top:39px;
+            display:none;
+        }
+        
+        .mainbar li:hover .dropdown{
+            display: block;  
+        }
+        
+    </style>
+    </head>
+<body>
+    <nav class="mainbar">
+        <ul>
+            <li>Home</li>
+            <li>Contacts
+                <ul class="dropdown">
+                    <li>Andrew</li>
+                    <li>Tim</li>
+                    <li>Roy</li>
+                    <li>Yaomin</li>
+                    <li>Jon</li>
+                </ul>
+            </li>
+            <li>Products
+                <ul class="dropdown">
+                    <li>Metal</li>
+                    <li>Plastic</li>
+                    <li>Gel</li>
+                </ul>
+            </li> 
+            <li>About</li>
+        </ul>
+        
+</nav>
+</body>
+    
+</html>
